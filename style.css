@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+}
+
+.rectangle{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/sky.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   font-size: 50px;
+   color: white;
+}
+
+.container{ 
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.navbar{
+    background-color: #363b50;
+    width: 100%;
+    min-height: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.bigbox{
+    height: 500px;
+    width: 45%;
+    background-color: #505b8f;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 50px;
+    background-image: url("./images/moon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5% 5%;
+    gap: 80px;
+    
+}
+
+.ham{
+    float: right;
+    display: none;
+
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .ham{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        cursor: pointer;
+        color: white;
+    }
+    .nav{
+        display: none;
+    }
+    .res .nav{
+        display: block;
+        float: none;
+        
+    }
+  }
+  
+.nav{
+    float: left;
+    padding: 14px;
+}
+
+.bar{
+    height: 6px;
+    width: 80%;
+    background-color: white;
+    margin: 4px;
+}
